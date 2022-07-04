@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/music.png">
+    <link rel="stylesheet" href="./style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>MusicPlayer</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="container-fluid"id="container-fluid">
+            <div class="row">
+                <div class="header col-lg-12">
+                    <img src="./assets/music.png"width="35px"height="35px">
+                    <h3 class="title">MusicPlayer</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container"id="container_">
+            <div class="row">
+                <div class="col-12 col-md-6 container_inner">
+                    <div class="main">
+                        <div class="image_container">
+                            <img alt="image"width="200px"height="70%"class="image"id="image">
+                            <div class="track_details">
+                                <p class="trackname"id="trackname">Ottilia billionaire</p>
+                            </div>
+                        </div>
+                        <div class="controls">
+                            <div class="seek">
+                                <div style="display: flex;justify-content:space-between">
+                                    <p id="current">00:00</p>
+                                    <p id="duration">00:00</p>
+                                </div>
+                                <input type="range" name="seek" id="seek"min="0"value="0"onchange="seekTo()">
+                            </div>
+                            <div class="controls_music">
+                                <img src="./assets/prev.png" alt="prev"width="30px"height="30px"id="prev">
+                                <img src="./assets/play.png" alt="play"width="30px"height="30px"id="play">
+                                <img src="./assets/next.png" alt="next"width="30px"height="30px"id="next">
+                            </div>
+                            <div class="vol_container">
+                                <img src="./assets/volume-down.png" alt="volumedown"width="15px"height="15px">
+                                <input type="range" name="volume" id="volume"min="0"max="100"value="100">
+                                <img src="./assets/volume.png" alt="volumedown"width="15px"height="15px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 container_inner">
+                    <div class="Listmain">
+                        <div class="listItem">
+                            <img src="https://a10.gaanacdn.com/images/albums/56/2609656/crop_480x480_2609656.jpg" alt="logo"width="40px"height="40px">
+                            <h6>Ottilia Billoinaire</h6>
+                            <button class="playButton"id="0">play</button>
+                        </div>
+                        <div class="listItem">
+                            <img src="https://www.famemagazine.co.uk/wp-content/uploads/2015/06/BEBE-REXHA4.jpg" alt="logo"width="40px"height="40px">
+                            <h6>Hey Mama BEBE REXHA</h6>
+                            <button class="playButton"id="1">play</button>
+                        </div>
+                        <div class="listItem">
+                            <img src="https://trendybeatz.com/images/Luis-Fonsi-Ft-Daddy-Yankee-Despacito-Art.jpg" alt="logo"width="40px"height="40px">
+                            <h6>Despacito</h6>
+                            <button class="playButton"id="2">play</button>
+                        </div>
+                        <div class="listItem">
+                            <img src="https://i.scdn.co/image/ab67616d0000b2735e02f2f639b9008f4d1935d3" alt="logo"width="40px"height="40px">
+                            <h6>Love Me Like You Do</h6>
+                            <button class="playButton"id="3">play</button>
+                        </div>
+                        <div class="listItem">
+                            <img src="https://a10.gaanacdn.com/gn_img/albums/9MAWe97WyJ/MAWeJeqqby/size_l.jpg" alt="logo"width="40px"height="40px">
+                            <h6>Baby Driver</h6>
+                            <button class="playButton"id="4">play</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 footer">
+                   <div class="details_container">
+                    <h5 id="song_name"></h5>
+                    <h5 id="song_duration"></h5>
+                    <h5 id="song_artist"></h5>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+</body>
+</html>

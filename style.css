@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.parent{
+    width:100vw;
+    height:auto;
+}
+.header{
+    width:100%;
+    height:50px;
+    background-color: rgb(42, 34, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    border-bottom: 1px solid gray;
+}
+.title{
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    color:white;
+}
+
+.container_inner{
+    height:100%;
+}
+.main{
+    width: 100%;
+    height:330px;
+    margin:2px auto auto auto;
+    border-radius:2px;
+    box-shadow: 1px 1px 15px gray;
+}
+.Listmain{
+    width:100%;
+    height:330px;
+    margin:15px auto auto auto;
+}
+.image_container{
+    width:80%;
+    height:200px;
+    margin:10px auto auto auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap:5px;
+}
+.controls{
+    width:90%;
+    margin: auto;
+    height:80px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:7px;
+}
+.controls_music{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+.vol_container{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+#volume{
+    width:100px;
+    height:3px;
+}
+#seek{
+    width:250px;
+    height:6px;
+}
+
+#seek,#volume:hover{
+    cursor: pointer;
+}
+
+.trackname{
+    font-size: 17px;
+    font-weight: 700;
+    font-family:cursive;
+}
+.controls_music>img:hover{
+    border:1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#duration{
+    font-size: 13px;
+}
+#current{
+    font-size: 13px;
+}
+.listItem{
+    width:95%;
+    height:50px;
+    box-shadow: 1px 1px 20px gray;
+    border-radius: 5px;
+    margin:auto;
+    margin-top:10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.playButton{
+    border:1px solid white;
+    margin-right: 5px;
+}
+.listItem>img{
+    margin-left: 5px;
+}
+.footer{
+    height:300px;
+    width:100vw;
+    background-color: rgb(42, 34, 34);
+}
+.details_container>h5{
+    padding:10px;
+    color:white;
+    font-family: 'Pacifico',cursive;
+}
